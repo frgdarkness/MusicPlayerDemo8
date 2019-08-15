@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.model
+package com.example.musicappdemo4.data.model
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -7,7 +7,6 @@ import android.media.MediaMetadataRetriever
 import android.provider.MediaStore
 import androidx.core.graphics.drawable.toBitmap
 import com.example.musicappdemo4.R
-import com.example.musicappdemo4.model.Song
 import java.lang.Exception
 
 class MyMedia(val context:Context) {

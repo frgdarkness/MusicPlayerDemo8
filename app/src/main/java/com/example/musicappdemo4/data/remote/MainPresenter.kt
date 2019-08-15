@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.presenter
+package com.example.musicappdemo4.data.remote
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -6,9 +6,8 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.util.Log
 import com.example.musicappdemo4.R
-import com.example.musicappdemo4.model.App
-import com.example.musicappdemo4.model.Song
-import com.example.musicappdemo4.service.MediaPlayerListener
+import com.example.musicappdemo4.data.model.App
+import com.example.musicappdemo4.data.model.Song
 import com.example.musicappdemo4.service.MusicService
 
 class MainPresenter() : MainContract.Presenter {
@@ -20,11 +19,11 @@ class MainPresenter() : MainContract.Presenter {
     private val handler = android.os.Handler()
     private var runnable:Runnable? = null
 
-    constructor(view:MainContract.MainView) : this() {
+    constructor(view: MainContract.MainView) : this() {
         this.mainView = view
     }
 
-    constructor(view:MainContract.PlayView) : this(){
+    constructor(view: MainContract.PlayView) : this(){
         this.playView = view
     }
 

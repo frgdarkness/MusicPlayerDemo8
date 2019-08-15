@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.view
+package com.example.musicappdemo4.ui
 
 import android.content.ComponentName
 import android.content.Context
@@ -11,11 +11,11 @@ import android.util.Log
 import android.view.View
 import android.widget.SeekBar
 import com.example.musicappdemo4.R
-import com.example.musicappdemo4.model.App
-import com.example.musicappdemo4.model.MyMedia
-import com.example.musicappdemo4.model.Song
-import com.example.musicappdemo4.presenter.MainContract
-import com.example.musicappdemo4.presenter.MainPresenter
+import com.example.musicappdemo4.data.model.App
+import com.example.musicappdemo4.data.model.MyMedia
+import com.example.musicappdemo4.data.model.Song
+import com.example.musicappdemo4.data.remote.MainContract
+import com.example.musicappdemo4.data.remote.MainPresenter
 import com.example.musicappdemo4.service.MusicService
 import kotlinx.android.synthetic.main.activity_play.*
 import java.text.SimpleDateFormat

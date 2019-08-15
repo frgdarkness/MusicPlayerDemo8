@@ -3,7 +3,6 @@ package com.example.musicappdemo4.service
 import android.app.*
 import android.content.Context
 import android.content.Intent
-import android.media.MediaPlayer
 import android.os.Binder
 import android.os.Build
 import android.os.Handler
@@ -11,11 +10,12 @@ import android.os.IBinder
 import android.support.v4.media.session.MediaSessionCompat
 import android.util.Log
 import android.widget.Toast
-import com.example.musicappdemo4.view.MainActivity
+import com.example.musicappdemo4.ui.MainActivity
 import com.example.musicappdemo4.R
-import com.example.musicappdemo4.model.App
-import com.example.musicappdemo4.model.MyMedia
-import com.example.musicappdemo4.model.Song
+import com.example.musicappdemo4.data.model.App
+import com.example.musicappdemo4.data.model.MyMedia
+import com.example.musicappdemo4.data.model.Song
+import com.example.musicappdemo4.data.remote.MediaController
 
 class MusicService : Service(){
 

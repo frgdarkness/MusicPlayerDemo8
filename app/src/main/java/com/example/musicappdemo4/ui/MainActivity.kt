@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.view
+package com.example.musicappdemo4.ui
 
 import android.annotation.SuppressLint
 import android.content.ComponentName
@@ -16,15 +16,13 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.musicappdemo4.R
-import com.example.musicappdemo4.model.App
-import com.example.musicappdemo4.model.SongAdapter
-import com.example.musicappdemo4.model.MyMedia
-import com.example.musicappdemo4.model.Song
-import com.example.musicappdemo4.presenter.MainContract
-import com.example.musicappdemo4.presenter.MainPresenter
+import com.example.musicappdemo4.data.model.App
+import com.example.musicappdemo4.data.model.MyMedia
+import com.example.musicappdemo4.data.model.Song
+import com.example.musicappdemo4.data.remote.MainContract
+import com.example.musicappdemo4.data.remote.MainPresenter
 import com.example.musicappdemo4.service.MusicService
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_play.*
 
 class MainActivity : AppCompatActivity(), SongAdapter.SongClick, MainContract.MainView, View.OnClickListener {
 

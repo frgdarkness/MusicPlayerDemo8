@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.model
+package com.example.musicappdemo4.data.model
 
 class App {
     companion object{

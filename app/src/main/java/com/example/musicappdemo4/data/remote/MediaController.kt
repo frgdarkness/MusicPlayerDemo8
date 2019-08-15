@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.service
+package com.example.musicappdemo4.data.remote
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -7,11 +7,10 @@ import android.content.IntentFilter
 import android.media.MediaPlayer
 import android.os.PowerManager
 import android.util.Log
-import android.widget.Toast
-import com.example.musicappdemo4.model.App
-import com.example.musicappdemo4.model.MyMedia
-import com.example.musicappdemo4.model.Song
-import kotlin.concurrent.thread
+import com.example.musicappdemo4.data.model.App
+import com.example.musicappdemo4.data.model.MyMedia
+import com.example.musicappdemo4.data.model.Song
+import com.example.musicappdemo4.service.MusicService
 
 class MediaController(service: MusicService) : MediaPlayerListener, MediaPlayer.OnCompletionListener{
 

@@ -1,4 +1,4 @@
-package com.example.musicappdemo4.model
+package com.example.musicappdemo4.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.musicappdemo4.R
+import com.example.musicappdemo4.data.model.Song
 
 class SongAdapter(val listSong: ArrayList<Song>, listener: SongClick) : RecyclerView.Adapter<SongAdapter.ViewHolder>() {
 

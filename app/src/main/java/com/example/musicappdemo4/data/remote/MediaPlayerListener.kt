@@ -1,6 +1,6 @@
-package com.example.musicappdemo4.service
+package com.example.musicappdemo4.data.remote
 
-import com.example.musicappdemo4.model.Song
+import com.example.musicappdemo4.data.model.Song
 
 interface MediaPlayerListener {
 
@@ -19,11 +19,5 @@ interface MediaPlayerListener {
     fun seekTo(position: Int)
 
     fun getCurrentTime():Int
-
-    //fun callUpdateSongInfo()
-
-
-
-
 
 }

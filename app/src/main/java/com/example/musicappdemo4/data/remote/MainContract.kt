@@ -1,7 +1,7 @@
-package com.example.musicappdemo4.presenter
+package com.example.musicappdemo4.data.remote
 
 import android.content.Context
-import com.example.musicappdemo4.model.Song
+import com.example.musicappdemo4.data.model.Song
 import com.example.musicappdemo4.service.MusicService
 
 interface MainContract {
